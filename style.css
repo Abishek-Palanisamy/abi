@@ -1,0 +1,376 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+  /* background-color: #f0f0f0; */
+  /* Light background as seen in the image */
+}
+
+.navbar {
+  background-color: #002c63;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+}
+
+.brand {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.btn.post-btn {
+  background-color: #f4a261;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.menu-icon {
+  font-size: 22px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  /* Adjust as needed */
+  /* background-color: #fff; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.left-section {
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.left-section h1 {
+  font-size: 4em;
+  /* Adjust font size to match the image */
+  line-height: 1.1;
+  margin: 0;
+  color: #333;
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.post-button,
+.find-button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.post-button {
+  background-color: #007bff;
+  /* Example blue color, adjust if needed */
+  color: #fff;
+}
+
+.post-button:hover {
+  background-color: #0056b3;
+}
+
+.find-button {
+  background-color: #f0f0f0;
+  /* Light grey for the second button */
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.find-button:hover {
+  background-color: #e0e0e0;
+}
+
+/* .right-section {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  gap: 15px;
+  /* Space between image columns */
+  /* background-color: #f8f8f8; */
+  /* Slightly different background for the right section */
+
+
+.image-column {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  /* border-radius: 8px; */
+  /* Slight roundness for the image containers */
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+  /* Subtle shadow for images */
+}
+
+.image-column img {
+
+  width: 30%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: all ease-in-out 0.5s;
+  /* Ensures the image covers the area without distortion */
+  /* border-radius: 8px; */
+  /* Apply to image itself as well */
+  /* transition: all ease-in-out 0.5; */
+}
+.right-section{
+  margin: 100px 0 0 200px;
+  height: 400px;
+  /* padding: 20px; */
+  width: 50%;
+ display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  gap:1px;
+}
+
+/* .image-column.active{
+  width: 500px !important;
+  height: 350px !important;
+} */
+
+.image-column img:hover{
+  width: 100%;
+}
+
+.search-box {
+  background: linear-gradient(to right, #1d2b64, #2b5876);
+  margin-top: 20px;
+  padding: 20px;
+  margin-left: 100px;
+  border-radius: 20px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Tab Buttons */
+.tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tab {
+  background: white;
+  color: #333;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.tab:hover {
+  transform: scale(1.05);
+}
+
+.tab.active {
+  background: #1d2b64;
+  color: white;
+  border: 2px solid white;
+}
+
+/* Dropdowns */
+.dropdowns {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+select {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  min-width: 130px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+select:hover {
+  transform: translateY(-3px);
+}
+
+/* Search Button */
+.search-btn {
+  background-color: #cc814a;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search-btn:hover {
+  transform: scale(1.1);
+  background-color: #a45d2d;
+}
+
+/*Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* body {
+  font-family: sans-serif;
+  background: #f6f6f6;
+  margin: 0;
+  padding: 30px;
+} */
+
+.contain {
+  /* max-width: 1200px; */
+  width: 100%;
+  margin: auto;
+  /* overflow: hidden; */
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.card-list {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+ .card { 
+  background: #fff;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: 0.3s; 
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+ .img-box { 
+   position: relative; 
+   overflow: hidden; 
+   border-top-left-radius: 12px; 
+   border-bottom-right-radius: 12px; 
+   height: 100%;
+   width: 550px; 
+ } 
+
+.img-box img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  gap: 10px; 
+}
+
+.price {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: #000;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.content {
+  padding: 15px;
+}
+
+.content h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.content p {
+  color: #555;
+  font-size: 0.9rem;
+  margin: 10px 0;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #444;
+  font-size: 0.85rem;
+  gap: 5px;
+}    
